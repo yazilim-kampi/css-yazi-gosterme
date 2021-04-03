@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yazı Efekti</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .kutu {
+            width: 60%;
+            height: 60vh;
+            background: url(images/galata.jpg) no-repeat center;
+            background-size: 60% 60vh;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .kutu p {
+            opacity: 0;
+            transition: 0.4s;
+        }
+        
+        .kutu:hover p {
+            opacity: 1;
+            color: white;
+            font-size: 45px;
+            background-color: rgba(0, 0, 0, 0.6);
+            width: 45%;
+            border-radius: 6px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="kutu">
+        <p>Galata Kulesi</p>
+    </div>
+</body>
+
+</html>
